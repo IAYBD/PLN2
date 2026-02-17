@@ -16,8 +16,8 @@ def tokenize_with_spacy(text):
         print(f"Palabra: {token.text}") # Imprime el texto original del token
         print(f"  - Lemma: {token.lemma_}") # Devuelve la forma base de la palabra ej: Escribo -> Escribir
         print(f"  - Categoría gramatical (POS): {token.pos_}") # Part of Speech (POS) indica la categoría gramatical
-        print(f"  - Etiqueta detallada: {token.tag_}")
-        print(f"  - Dependencia sintáctica: {token.dep_}")
+        print(f"  - Etiqueta detallada: {token.tag_}") # Etiqueta morfológica más específica
+        print(f"  - Dependencia sintáctica: {token.dep_}") # Indica la función del token en la oración (dependencia sintáctica)
         print()
 
 text_to_test = "El procesamiento del lenguaje natural es una rama de la inteligencia artificial."
